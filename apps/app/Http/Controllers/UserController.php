@@ -67,7 +67,6 @@ class UserController extends Controller {
                                              'customer.customer_tel',
                                              'customer.customer_file')->get();
 
-
                     return $list;
                 }
             }
