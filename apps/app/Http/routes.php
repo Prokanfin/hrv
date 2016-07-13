@@ -27,6 +27,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/users', 'UserController@index');
     Route::get('/listUserEm', 'UserController@listUserEmployee');
     Route::get('/listUserCus', 'UserController@listUserCustomer');
-
+    
+    
+    
+    
 
 });

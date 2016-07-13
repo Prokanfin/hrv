@@ -1,1 +1,1 @@
-@extends('layouts.master')@section('title', 'DashBoard')@section('footer')@section('content')    <p>แผงควบคุม แก้จากเต้.</p>    <p>แบงค์แก้จาก ATOM นะจ๊ะ</p>    <h3>ทดสอบอีกสักรอบเพื่อความชัวร์นะจ๊ะ</h3>@endsection
+@extends('layouts.master')@section('title', 'DashBoard')@section('footer')@section('content')    <p>แผงควบคุม แก้จากเต้.</p>    <p>แบงค์แก้จาก ATOM นะจ๊ะ</p>    <h3>ทดสอบอีกสักรอบเพื่อความชัวร์นะจ๊ะ</h3>    <h2>เย้ๆๆๆๆๆ...</h2>@endsection
