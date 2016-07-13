@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'supermarketregular';
+    src: url('../../assets/font/supermarket-webfont.woff2') format('woff2'),
+         url('../../assets/font/supermarket-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.page-login-v2:before {
+  background-image: url("../../assets/images/bmgrh.jpg");
+}
+@media (min-width: 1270px){
+	.logo_brand{
+	width: 30%;
+    margin: 0 auto;
+	}
+	.brand_img{
+	width: 150px;
+	}
+	.brand-img{
+	width: 500px;
+}
+}
+@media (min-width: 992px){
+.static_chart .col-md-3{
+        width: 20%;
+    }
+}
+@media (min-width: 770px){
+	.logo_brand{
+	width: 30%;
+    margin: 0 auto;
+	}
+	.brand_img{
+	width: 150px;
+	}
+	.brand-img{
+	width: 350px;
+}
+.modal-fill-in .modal-dialog>* {
+    width: 850px;
+}
+}
+@media (max-width: 768px){
+.brand_img{
+	display: none;
+	}
+.brand-img{
+	width: 100%;
+}
+.site-action .btn-floating{
+     font-size: 30px;
+} 
+}
+.app-work .slidePanel-actions {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.modal-body{
+	color: black;
+}
+@media (min-width: 768px){
+.model_project {
+    width: 1100px!important;
+    margin: 30px auto;
+}
+.modal-table{
+   width: 1000px; 
+}
+}
+
+.header_form{
+	font-weight: 700;
+	font-size: 20px;
+}
+/*///////////////////////upload file///////////////////////////////////*/
+.custom-file-upload-hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+.custom-file-upload {
+    display: block;
+    width: auto;
+    font-size: 16px;
+   /* margin-top: 30px;*/
+   /* border: 1px solid #ccc; */ 
+}.custom-file-upload label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+.file-upload-wrapper {
+    position: relative; 
+    margin-bottom: 5px;
+  /*  border: 1px solid #ccc;*/
+}
+.file-upload-input {
+   /* width:  300px;*/
+   max-width: 300px;
+   width: auto;
+    color: white;
+    font-size: 16px;
+    padding: 5.5px 17px; 
+    border: none;
+    background-color: #8a8888; 
+   -webkit-transition: width 2s; /* Safari */
+    transition: width 2s; 
+    float: left; /* IE 9 Fix */
+}
+.file-upload-input :hover{
+	 opacity: 0.9;
+    filter: alpha(opacity=90);
+        outline: none; 
+}
+.file-upload-input :focus{
+	  opacity: 0.9;
+    filter: alpha(opacity=90);
+        outline: none; 
+}
+.file-upload-button {
+    cursor: pointer; 
+    display: inline-block; 
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 11px 20px; 
+    border: none;
+    margin-left: -1px;  
+    background-color: #3f51b5; 
+    float: left; /* IE 9 Fix */
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;     
+}
+.file-upload-button :hover{
+	background-color: darken(#c0392b, 20);
+}  
+.page-header{
+      padding: 15px 30px;
+}
+.left_chbox{
+    text-align: left !important;
+}
+.width-fileList{
+    width: 85% !important; 
+}
+.border_preload{
+        border-top-style: dotted;
+    border-width: 2px;
+    border-color: rgba(147, 147, 150, 0.62);
+}
+.uploader-inline{
+    padding: 10%;
+}
+.upload-instructions{
+    font-size: 20px!important;
+}
+.panel-body-employ{padding: 30px 0;}
+.table_style{
+        border-style: solid;
+    border-width: 1px;
+    border-color: rgba(212, 212, 212, 0.45);
+}
+.table_style thead{
+        background: rgba(117, 115, 115, 0.43);
+}
+.dropify-wrapper{
+    height: 150px;
+}
+.example {
+     margin-top: 0px; 
+   } 
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-cropper img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.bg-th{
+        background: whitesmoke;
+    border-style: inherit;
+}
+.footer-btn-tb{
+    text-align: center;
+    font-size: 30px;
+}
+.header_table{
+padding-bottom: 10px; 
+}
+.buttom_center{
+width: 100%;
+    position: fixed;
+    text-align: center;
+     bottom: 10px;
+    z-index: 1111;
+}
+.fix-button{
+width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #e6e6e6;
+    height: 65px;
+    opacity: 0.8;
+}
+.form-horizontal .control-label{
+    text-align: left;
+}
+.app-contacts .slidePanel-header .edit_b{
+    position: absolute;
+    right: 20px;
+    bottom: -26px;
+}
