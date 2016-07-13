@@ -22,6 +22,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/logout', 'AuthenController@logout');
     Route::any('/checkAuth', 'AuthenController@checkAuth');
     Route::get('/dashboard', 'DashboardController@index');
+<<<<<<< HEAD
     
 //--------------------- data ---------------------------------------
     Route::group(['prefix' => 'data'], function () {
@@ -39,4 +40,15 @@ Route::group(['middleware' => 'web'], function () {
             return view('data/customer');
         });
     });
+=======
+
+    Route::get('/users', 'UserController@index');
+    Route::get('/listUserEm', 'UserController@listUserEmployee');
+    Route::get('/listUserCus', 'UserController@listUserCustomer');
+    
+    
+    
+    
+
+>>>>>>> origin/master
 });

@@ -46,11 +46,12 @@
         @endif
         <!--/Main-->
 
-        @if(Request::is('users')) 
+        @if(Request::is('data/users')) 
         <!--Users-->
-        <link rel="stylesheet" href="include/assets/global/vendor/filament-tablesaw/tablesaw.css">
-        <link rel="stylesheet" href="include/assets/global/vendor/slidepanel/slidePanel.css">
-        <link rel="stylesheet" href="include/assets/examples/css/apps/contacts.css">
+       <link rel="stylesheet" href="{{asset('include/assets/global/vendor/filament-tablesaw/tablesaw.css')}}">
+        <link rel="stylesheet" href="{{asset('include/assets/global/vendor/slidepanel/slidePanel.css')}}"> 
+        
+      <link rel="stylesheet" href="{{asset('include/assets/examples/css/apps/contacts.css')}}">  <!--   ตัวนี้มีปัญหา  -->
         <!--/Users-->
         @endif
         
@@ -69,7 +70,7 @@
 Breakpoints();
         </script>
     </head>
-    <body class="@if(Request::is('users')) app-contacts @endif site-navbar-small" ng-app="hrv">
+    <body   class="@if(Request::is('data/users')) app-contacts @endif site-navbar-small" ng-app="hrv">
 
         @section('navbar')
         <nav class="site-navbar navbar navbar-inverse navbar-fixed-top navbar-mega" role="navigation">
@@ -385,7 +386,7 @@ Breakpoints();
                         <span class="site-menu-title">แผงควบคุม</span>
                     </a>
                 </li>
-                <li class="site-menu-item has-sub @if(Request::is('users')) active  @endif">
+                <li class="site-menu-item has-sub @if(Request::is('data/users')) active  @endif">
                     <a href="javascript:void(0)">
                         <i class="site-menu-icon icon md-folder-person" aria-hidden="true"></i>
                         <span class="site-menu-title">ข้อมูล</span>
@@ -402,8 +403,8 @@ Breakpoints();
                             <span class="site-menu-title">พนักงาน</span>
                             </a>
                         </li>
-                        <li class="site-menu-item  @if(Request::is('users')) active  @endif">
-                            <a class="animsition-link" href="{{asset('users')}}">
+                        <li class="site-menu-item  @if(Request::is('data/users')) active  @endif">
+                            <a class="animsition-link" href="{{asset('data/users')}}">
                                 <span class="site-menu-title">ผู้ใช้งาน</span>
                             </a>
                         </li>
@@ -488,10 +489,10 @@ Breakpoints();
 
 
 
-        @if(Request::is('users')) 
+        @if(Request::is('data/users')) 
         <!--ถ้าเป็นหน้า Users-->
         
-        @yield('content')
+            @yield('content')
        
         <!--ถ้าเป็นหน้า Users-->
         @else
@@ -545,12 +546,12 @@ Breakpoints();
         <script src="{{asset('include/assets/global/vendor/jquery-selective/jquery-selective.min.js')}}"></script>
         @endif
 
-        @if(Request::is('users')) 
-        <!-- Plugins users-->
+        @if(Request::is('data/users')) 
+        <!-- Plugins data/users-->
         <script src="{{asset('include/assets/global/vendor/filament-tablesaw/tablesaw.js')}}"></script>
         <script src="{{asset('include/assets/global/vendor/aspaginator/jquery.asPaginator.min.js')}}"></script>
         <script src="{{asset('include/assets/global/vendor/jquery-placeholder/jquery.placeholder.js')}}"></script>
-        <!-- /Plugins users-->
+        <!-- /Plugins data/users-->
         @endif
 
         <!-- Scripts -->
@@ -580,7 +581,7 @@ Breakpoints();
         <script src="{{asset('include/assets/global/js/components/bootbox.js')}}"></script>
         <script src="{{asset('include/assets/js/app.js')}}"></script>
         <script src="{{asset('include/assets/examples/js/apps/contacts.js')}}"></script>
-        @if(Request::is('users')) 
+        @if(Request::is('data/users')) 
 
         <!-- scripts plugin Users -->
         <!-- script form validation-->
